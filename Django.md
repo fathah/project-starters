@@ -24,6 +24,17 @@ django-admin startproject projectname
 
 ## Create App
 ```
-py manage.py startapp appname
+python manage.py startapp appname
 ```
+
+## Migration
+General Migration
+```
+python manage.py migrate
+```
+Model Make Migration
+```
+py manage.py makemigrations {appname}
+```
+
 
