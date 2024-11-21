@@ -15,3 +15,7 @@ docker build -t {name} .
 ```
 docker run -p {MACHINE_PORT}:{CONTAINER_PORT} {image_name}
 ```
+### Run in Detached Mode
+```
+docker run -d -p {MACHINE_PORT}:{CONTAINER_PORT} {image_name}
+```
