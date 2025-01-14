@@ -24,4 +24,7 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 GRANT ALL PRIVILEGES ON database_name.* TO 'new_username'@'localhost';
 ```
 
-#### 
+#### Create DB
+```
+CREATE DATABASE databasename;
+```
