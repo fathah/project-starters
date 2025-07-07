@@ -13,7 +13,7 @@ Add secrets and Variables to the repo.
 - `SERVER_DEPLOY_PATH`
 
 
-Copy `.env` to the Server
+Copy `.env` to the Server before build action starts
 ```sh
 scp .env user@yourserver:/path/to/your/app/
 ```
