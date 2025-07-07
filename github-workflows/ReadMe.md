@@ -8,4 +8,5 @@ Add secrets and Variables to the repo.
 - `SERVER_SSH_KEY`
 
 ### Variables
-- 
+- `NODE_VERSION`
+- `SERVER_DEPLOY_PATH`
