@@ -50,6 +50,10 @@ jobs:
           if [ -z "${{ secrets.SERVER_USER }}" ]; then echo "❌ Missing secret: SERVER_USER"; exit 1; fi
           if [ -z "${{ secrets.SERVER_SSH_KEY }}" ]; then echo "❌ Missing secret: SERVER_SSH_KEY"; exit 1; fi
           if [ -z "${{ secrets.APP_ENVS }}" ]; then echo "❌ Missing secret: APP_ENVS (.env for server)"; exit 1; fi
+
+          # Check required files
+          if [ ! -f "ecosystem.config.js" ]; then echo "❌ Missing file: ecosystem.config.js"; exit 1; fi
+          
       
         shell: bash
 
