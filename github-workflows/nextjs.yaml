@@ -84,4 +84,4 @@ jobs:
           script: |
             cd ${{ vars.SERVER_DEPLOY_PATH }}
             npm install --production
-            pm2 restart ecosystem.config.js  # Or your server restart command
+            pm2 reload ecosystem.config.js || pm2 start ecosystem.config.js
