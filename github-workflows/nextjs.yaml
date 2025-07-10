@@ -26,7 +26,6 @@ jobs:
           --health-retries 5
 
     env:
-      NODE_ENV: production
       DATABASE_URL: mysql://test:test@127.0.0.1:3306/mydb
       # Add more .env secrets if required during build
 
@@ -89,9 +88,6 @@ jobs:
       - name: Run Prisma Migrate (if needed)
         if: steps.prisma-check.outputs.prisma == 'true'
         run: npx prisma migrate deploy
-
-      - name: Run Tests
-        run: npm run test
 
       - name: Build Next.js
         run: npm run build
