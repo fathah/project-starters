@@ -22,3 +22,8 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO test;
 # Exit psql
 \q
 ```
+
+### Use Database
+```sh
+\c db_name
+```
