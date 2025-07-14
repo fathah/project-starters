@@ -27,3 +27,10 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO test;
 ```sh
 \c db_name
 ```
+
+### List Tables
+```sh
+\dt
+```
+
+
