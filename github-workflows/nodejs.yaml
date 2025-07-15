@@ -43,7 +43,6 @@ jobs:
           if [ -z "${{ secrets.SERVER_HOST }}" ]; then echo "❌ Missing secret: SERVER_HOST"; exit 1; fi
           if [ -z "${{ secrets.SERVER_USER }}" ]; then echo "❌ Missing secret: SERVER_USER"; exit 1; fi
           if [ -z "${{ secrets.SERVER_PASSWORD }}" ]; then echo "❌ Missing secret: SERVER_PASSWORD"; exit 1; fi
-          if [ -z "${{ secrets.APP_ENVS }}" ]; then echo "❌ Missing secret: APP_ENVS (.env for server)"; exit 1; fi
 
           if [ ! -f "ecosystem.config.js" ]; then echo "❌ Missing file: ecosystem.config.js"; exit 1; fi
 
