@@ -5,6 +5,11 @@ This repo is starter template and common `pub` packages I personally use in typi
 flutter create --org com.yourdomain app_name
 ```
 
+### Build and Create Archive for App Store
+```sh
+flutter build ipa
+```
+
 ### Commonly used packages
 ```
 Firebase
