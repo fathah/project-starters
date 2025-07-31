@@ -9,15 +9,17 @@ sudo -i -u postgres
 ```sh
 # Open the PostgreSQL shell
 psql
-
+```
+### DB Commands
+```sql
 # Create a database
-CREATE DATABASE mydb;
+CREATE DATABASE dbname;
 
 # Create a user
-CREATE USER test WITH ENCRYPTED PASSWORD 'test';
+CREATE USER username WITH ENCRYPTED PASSWORD 'test';
 
 # Grant privileges
-GRANT ALL PRIVILEGES ON DATABASE mydb TO test;
+GRANT ALL PRIVILEGES ON DATABASE dbname TO username;
 
 # Exit psql
 \q
@@ -31,6 +33,13 @@ GRANT ALL PRIVILEGES ON DATABASE mydb TO test;
 ### List Tables
 ```sh
 \dt
+```
+
+### Give schema access to user
+```sql
+GRANT USAGE ON SCHEMA public TO username;
+GRANT CREATE ON SCHEMA public TO username;
+GRANT ALL ON SCHEMA public TO username;
 ```
 
 
