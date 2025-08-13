@@ -99,5 +99,5 @@ jobs:
           port: 22
           script: |
             cd ${{ vars.SERVER_DEPLOY_PATH }}
-            npm install --production
+            npm install --omit=dev
             pm2 reload ecosystem.config.js || pm2 start ecosystem.config.js
