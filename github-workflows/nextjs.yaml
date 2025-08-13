@@ -101,3 +101,4 @@ jobs:
             cd ${{ vars.SERVER_DEPLOY_PATH }}
             npm install --omit=dev
             pm2 reload ecosystem.config.js || pm2 start ecosystem.config.js
+            pm2 save
