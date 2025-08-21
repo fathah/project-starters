@@ -4,6 +4,10 @@ This repo is starter template and common `pub` packages I personally use in typi
 ```
 flutter create --org com.yourdomain app_name
 ```
+### Build iOS Release mode
+```sh
+flutter build ios --config-only --release
+```
 
 ### Build and Create Archive for App Store
 ```sh
