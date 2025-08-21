@@ -9,6 +9,11 @@ flutter create --org com.yourdomain app_name
 ```sh
 flutter build ipa
 ```
+### Build Android Release bundle
+```sh
+flutter build appbundle --release
+```
+
 
 ### Commonly used packages
 ```
