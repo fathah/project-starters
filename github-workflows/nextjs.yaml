@@ -87,7 +87,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
-          source: ".next,package.json,public,ecosystem.config.js"
+          source: ".next,package.json,package-lock.json,public,ecosystem.config.js"
           target: ${{ vars.SERVER_DEPLOY_PATH }}
 
       - name: Run SSH Remote Commands (optional)
