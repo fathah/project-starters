@@ -50,3 +50,21 @@ flutter clean
 flutter pub get
 flutter build appbundle --release
 ```
+
+## Create SHA Keys
+### Debug Mode
+Locate your debug keystore 
+```sh
+~/.android/debug.keystore
+```
+
+Command
+```sh
+keytool -list -v -keystore ~/.android/debug.keystore -alias androiddebugkey -storepass android -keypass android
+```
+
+### Release Mode
+```sh
+keytool -list -v -keystore your-release-key.keystore -alias your_alias_name
+```
+
