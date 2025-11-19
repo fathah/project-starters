@@ -6,6 +6,11 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 - -C → adds a label (your email) to help identify the key later
 - By default, it saves to ~/.ssh/id_ed25519 and ~/.ssh/id_ed25519.pub
 
+### Create key in a specific folder:
+```sh
+ssh-keygen -t ed25519 -f /Users/foldername -C "email@faab.com"
+```
+
 ### 🔍 2. View your public key
 ```sh
 cat ~/.ssh/id_ed25519.pub
