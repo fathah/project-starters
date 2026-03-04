@@ -135,4 +135,7 @@ Basic Styling
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 ```
 
-
+## My Common
+```
+npm i antd prisma js-cookie @ziqx/auth @ziqx/drive
+```
