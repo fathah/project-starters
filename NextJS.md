@@ -137,5 +137,5 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 ## My Common
 ```
-npm i antd prisma js-cookie @ziqx/auth @ziqx/drive
+npm i  prisma js-cookie @ziqx/auth @ziqx/drive antd @ant-design/nextjs-registry
 ```
