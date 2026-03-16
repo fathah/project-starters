@@ -139,3 +139,9 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 ```
 npm i  prisma js-cookie @ziqx/auth @ziqx/drive antd @ant-design/nextjs-registry
 ```
+
+## Revogrid
+```
+npm i @revolist/react-datagrid
+
+```
